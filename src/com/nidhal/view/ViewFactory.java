@@ -71,7 +71,7 @@ public class ViewFactory {
 
 
     private void initializeStage(BaseController baseController) {
-        System.out.println(getClass().getResource(baseController.getFxmlFile()));
+        //System.out.println(getClass().getResource(baseController.getFxmlFile()));
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(baseController.getFxmlFile()));
         fxmlLoader.setController(baseController);
         Parent parent;
