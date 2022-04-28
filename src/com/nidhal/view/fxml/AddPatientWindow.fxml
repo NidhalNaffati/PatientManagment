@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="66.0" prefWidth="428.0" text="WELCOME TO ADD PATIENT WINDOW">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldForId" layoutX="221.0" layoutY="163.0" prefHeight="26.0" prefWidth="160.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="86.0" prefHeight="66.0" prefWidth="414.0" text="PLEASE INSERT YOUR INFORMATION ON BLANK BLEW ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cinlabel" alignment="CENTER" layoutX="26.0" layoutY="160.0" prefHeight="32.0" prefWidth="106.0" text="CIN">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldForFirstName" layoutX="221.0" layoutY="207.0" prefHeight="26.0" prefWidth="160.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldForLastName" layoutX="221.0" layoutY="250.0" prefHeight="26.0" prefWidth="160.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label fx:id="firstnamelelabel" alignment="CENTER" layoutX="16.0" layoutY="204.0" prefHeight="32.0" prefWidth="126.0" text="FIRST NAME">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondnamelabel" alignment="CENTER" layoutX="19.0" layoutY="247.0" prefHeight="32.0" prefWidth="120.0" text="LAST NAME">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnadd" layoutX="161.0" layoutY="401.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="26.0" prefWidth="106.0" text="ADD" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="Messagelabel" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="458.0" prefHeight="90.0" prefWidth="422.0" textAlignment="CENTER">
+         <font>
+            <Font name="Gabriola" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldForphoneNumber" layoutX="221.0" layoutY="294.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldForLocation" layoutX="221.0" layoutY="334.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label fx:id="phonenumberlabel" alignment="CENTER" layoutX="7.0" layoutY="291.0" prefHeight="32.0" prefWidth="182.0" text="PHONE NUMBER">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationlaber" alignment="CENTER" layoutX="19.0" layoutY="331.0" prefHeight="32.0" prefWidth="120.0" text="LOCATION">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

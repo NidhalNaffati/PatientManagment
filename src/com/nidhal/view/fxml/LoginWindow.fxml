@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="btnsubmit" layoutX="159.0" layoutY="281.0" mnemonicParsing="false" onAction="#checkId" prefHeight="27.0" prefWidth="87.0" text="SUBMIT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+        <Label fx:id="welcomelabel" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="65.0" prefHeight="62.0" prefWidth="321.0" text="WELCOME" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="42.0" />
+            </font>
+        </Label>
+        <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="422.0" prefHeight="128.0" prefWidth="400.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+        <TextField fx:id="textFieldForId" layoutX="113.0" layoutY="209.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="160.0" prefHeight="40.0" prefWidth="355.0" text="SET YOUR CIN NUMBER HERE " textFill="#000000c4">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font></Label>
+        <Label fx:id="patientFullName" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="342.0" prefHeight="59.0" prefWidth="174.0">
+            <font>
+                <Font name="Gabriola" size="32.0" />
+            </font>
+        </Label>
+        <ToolBar prefHeight="40.0" prefWidth="400.0">
+            <items>
+                <Button fx:id="btnOption" layoutX="144.0" layoutY="12.0" mnemonicParsing="false" onAction="#option" prefHeight="26.0" prefWidth="73.0" text="OPTION">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addPatient" prefHeight="26.0" prefWidth="73.0" text="ADD">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnModify" layoutX="77.0" layoutY="12.0" mnemonicParsing="false" onAction="#modifyPatient" prefHeight="26.0" prefWidth="73.0" text="MODIFY">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+                <Button fx:id="btnDelete" layoutX="212.0" layoutY="12.0" mnemonicParsing="false" onAction="#deletePatient" prefHeight="26.0" prefWidth="73.0" text="DELETE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnAllData" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#showdata" prefHeight="26.0" prefWidth="73.0" text="ALL DATA">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            </items>
+        </ToolBar>
+    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

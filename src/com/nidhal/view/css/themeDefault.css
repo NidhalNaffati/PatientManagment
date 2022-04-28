@@ -1,0 +1,30 @@
+#btnsubmit
+{
+	-fx-background-color : #fffafa ;
+	-fx-font-size : 12px ;
+	-fx-text-fill : #708090 ;
+	-fx-padding : 8 8 8 8 ;
+	-fx-border-radius : 10 ;
+	-fx-font-weight : bold ;
+}
+
+
+#textfieldforCIN ,  textfieldforCIN , textfieldforFIRSTNAME,textfieldforLOCATION
+{
+     -fx-alignment : center ;
+}
+#textfieldforFIRSTNAME #textfieldforLOCATION
+{-fx-alignment : center ;}
+
+
+
+
+textfieldforCIN , textfieldforCIN , textfieldforFIRSTNAME,textfieldforLOCATION  {
+  -fx-alignment : center ;
+}
+
+
+#messagelabel
+{
+-fx-background-color : #fffafa ;
+}
