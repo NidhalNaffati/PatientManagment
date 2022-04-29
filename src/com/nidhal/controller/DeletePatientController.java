@@ -18,25 +18,27 @@ public class DeletePatientController extends BaseController {
     }
 
     @FXML
-    private Button btndelete ;
+    private Button btnDelete ;
 
     @FXML
-    private Label messagelabel , welcomelabel;
+    private Label messageLabel , welcomeLabel;
 
     @FXML
-    private TextField textfieldforCin;
+    private TextField textFieldForId;
 
     @FXML
     void deletePatient() {
-
-        int idNumber;
-        idNumber = Integer.parseInt(textfieldforCin.getText());
-        if (idNumber < 100000000 || idNumber > 9999999) {
+        int idNumber = 0;
+        try {
+            idNumber = Integer.parseInt(textFieldForId.getText());
+        } catch (NumberFormatException ex) {
+            messageLabel.setText("PLEASE ENTER A NUMERIC VALUE");
+        }
             try {
                 Connection con = DataBaseConnecction.getDataBaseConnection();
                 String sql = "delete from patients_info where id = " + "'" + idNumber + "'";
                 int roweffected = con.createStatement().executeUpdate(sql);
-                messagelabel.setText("DELETED SUCCESS ");
+                messageLabel.setText("DELETED SUCCESS ");
 
               //  messagelabel.wait(3000);
               //  messagelabel.setText("");
@@ -44,13 +46,8 @@ public class DeletePatientController extends BaseController {
             } catch (SQLException ex) {
                 ex.printStackTrace();
             } catch (NumberFormatException E) {
-                messagelabel.setText("SET A CORRECT CIN NUMBER ");
+                messageLabel.setText("SET A CORRECT CIN NUMBER ");
             }
         }
-        else
-            messagelabel.setText("ONLY 8 NUMBERS");
-
-
-    }
 }
 

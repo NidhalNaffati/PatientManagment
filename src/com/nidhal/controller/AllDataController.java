@@ -55,6 +55,7 @@ public class AllDataController extends BaseController implements Initializable {
 
     public void showData(){
         try {
+
             Connection con = DataBaseConnecction.getDataBaseConnection();
             ResultSet result = con.createStatement().executeQuery("select * from patients_info ");
 
@@ -97,9 +98,11 @@ public class AllDataController extends BaseController implements Initializable {
 
     @FXML
     void searchForPatient( ) {
-        int idNumber ; idNumber = Integer.parseInt(textFieldForSearch.getText());
-
-        if (idNumber < 100000000 || idNumber > 9999999 )
+        int idNumber = 0;
+        try {
+            idNumber = Integer.parseInt(textFieldForSearch.getText());
+        }catch (NumberFormatException ex) {}
+       
         try {
             Connection con = DataBaseConnecction.getDataBaseConnection();
             ResultSet result = con.createStatement().executeQuery("select * from patients_info where id =  " + idNumber);
@@ -127,7 +130,4 @@ public class AllDataController extends BaseController implements Initializable {
         tableViewForPatient.setItems(patientList);
 
     }
-
-
-
 }

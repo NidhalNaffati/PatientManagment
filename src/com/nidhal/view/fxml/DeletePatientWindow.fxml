@@ -8,20 +8,20 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField fx:id="textfieldforCin" layoutX="119.0" layoutY="184.0">
+      <TextField fx:id="textFieldForId" layoutX="119.0" layoutY="184.0">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></TextField>
-      <Button fx:id="btndelete" layoutX="155.0" layoutY="259.0" mnemonicParsing="false" onAction="#deletePatient" prefHeight="26.0" prefWidth="77.0" text="DELETE">
+      <Button fx:id="btnDelete" layoutX="155.0" layoutY="259.0" mnemonicParsing="false" onAction="#deletePatient" prefHeight="26.0" prefWidth="77.0" text="DELETE">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font></Button>
-      <Label fx:id="welcomelabel" alignment="CENTER" layoutX="27.0" layoutY="26.0" prefHeight="94.0" prefWidth="345.0" text="DELETE PATIENT">
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="27.0" layoutY="26.0" prefHeight="94.0" prefWidth="345.0" text="DELETE PATIENT">
          <font>
             <Font name="System Bold Italic" size="32.0" />
          </font>
       </Label>
-      <Label fx:id="messagelabel" alignment="CENTER" layoutX="27.0" layoutY="364.0" prefHeight="154.0" prefWidth="346.0">
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="27.0" layoutY="364.0" prefHeight="154.0" prefWidth="346.0">
          <font>
             <Font name="System Bold Italic" size="19.0" />
          </font>

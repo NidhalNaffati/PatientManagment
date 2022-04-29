@@ -74,7 +74,6 @@ public class OptionsController extends  BaseController implements Initializable 
     }
 
 
-
     @FXML
     void ApplyBtnAction() {
         viewFactory.setColorTheme(themePicker.getValue());
