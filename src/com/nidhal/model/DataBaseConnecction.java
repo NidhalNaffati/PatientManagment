@@ -6,7 +6,12 @@ import java.sql.SQLException;
 
 public class DataBaseConnecction {
     public static Connection getDataBaseConnection() throws SQLException {
-        Connection databaseConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?serverTimezone=GMT", "doctor", "NIDnaf012");
+        String databaseName = "demo" ;
+        String url = "jdbc:mysql://localhost:3306/"+databaseName+"?";
+        String user = "doctor" ;
+        String password = "NIDnaf012" ;
+
+        Connection databaseConnection = DriverManager.getConnection(url, user, password);
         return databaseConnection;
     }
 }
