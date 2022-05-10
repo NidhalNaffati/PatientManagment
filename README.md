@@ -3,7 +3,7 @@
 This is a simple javaFX project aiming to registrate some local data from "Patients" in a database
 
 
-#How to use this application
+##How to use this application
 
 * Install MySQL from this link : https://dev.mysql.com/downloads/installer/
 
